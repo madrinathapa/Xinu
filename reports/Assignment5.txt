@@ -1,0 +1,18 @@
+Functions:
+
+1.future_alloc(int future_flag)) -  made changes for allocating the get_queue and set_queue. [Madrina Thapa]
+
+2. future_get(future *f, int *value) - Made changes for new future flags (FUTURE_SHARED and FUTURE_QUEUE). [Huzeyfe Kocabas]
+
+3. future_set(future* f, int* value) - Made changes for new future flags (FUTURE_SHARED and FUTURE_QUEUE). [Huzeyfe Kocabas]
+ 
+// Queue related operations
+
+4. init_fqueue() -  Method for initializing the queue (set_queue and get_queue). Returns pointer to the queue. [Huzeyfe Kocabas]
+
+5. is_queueempty(node *n) - Method checks if the queue is empty. It returns 1 if the queue is empty else 0.  [Huzeyfe Kocabas]
+
+6. fut_enqueue(pid32 curr_pid, node* curr_queue) - This function for adds a new node value to end of the queue. [Madrina Thapa]
+
+7. fut_dequeue(node* curr_queue) - This method dequeues the node from a queue, always the first element. It returns the pid of the node deueued. [Madrina Thapa]
+

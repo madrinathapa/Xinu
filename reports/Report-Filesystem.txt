@@ -1,0 +1,12 @@
+Assignment 7 Report
+
+Implemented in-memory file system 
+
+Functions that are used in the fs.c file:
+create(char *filename, int mode)		==>  Huzeyfe
+open(char *filename, int flags)			==> Huzeyfe
+close(int fd)								==> Huzeyfe
+seek(int fd, int offset)					==>Madrina Thapa
+write(int fd, void *buf, int nbytes)		==> Madrina Thapa
+read(int fd, void *buf, int nbytes)		==> Madrina Thapa
+

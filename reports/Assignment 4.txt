@@ -1,0 +1,13 @@
+Functions:
+
+1.future_alloc() -  is used to allocate space for a new future. [Madrina Thapa]
+
+2. future_free() - is used to free the space assigned to a future. [Madrina Thapa]
+
+3. future_get() - Reads the value of the future and changes the state of future from FUTURE_VALID to FUTURE_EMPTY. [Huzeyfe Kocabas]
+
+4. future_set() - Sets the value passed in the parameter to future and changes its state from FUTURE_EMPTY or FUTURE_WAITING to FUTURE_VALID. [Huzeyfe Kocabas]
+
+5. future_prod() - It is the producer function, it produces a value and calls future_set to set the value produced to the value of future.
+
+6. future_cons() - It is the consumer function. It uses future_get to retrieve the value produced in future_prod method and then prints it.

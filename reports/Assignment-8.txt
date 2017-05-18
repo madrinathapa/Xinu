@@ -1,0 +1,7 @@
+Assignment 8 (Networking)
+
+1. Wrote a client in Linux for communicating with the XINU.
+
+2. Implemented removing of entires that have been in the ARP cache for 5 minutes or longer. This will not let any message in ARP become stale. Made changes mainly in arp.c in arp_in method and arp_alloc method.
+ 
+3. Implemented Network Futures. Made changes mainly in future_get(), future_set(), future_prod() and future_cons().  

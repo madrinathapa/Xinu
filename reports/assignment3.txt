@@ -1,0 +1,25 @@
+1 - How exactly is sychronization achieved using semaphore in our assignnment?
+
+At first, we have assigned 0  to the produced semaphore and 1 to the consumed semaphore. When we create the producer process, it begins its execution but the consumer process is
+made to wait as the initial value of consumed semaphore is 1. The producer process will continue and assign the i value to the n. After the producer function gives out a signal, 
+the consumer function will continue and consume the value produced. Meanwhile the producer process will be on wait as the produced semaphore is now set to 1. After the consumer 
+process is done consuming the produced value it will give out a signal and after which the producer process can continue and produce a new value. Thus, the consumer function will 
+consume every value produced by the produced by the producer function.
+
+2 - Can the above sychronization be achieved with just one semaphore? Why or why not? 
+
+No, it can not be achieved with just one semaphore. There has to be 2 semaphores, one on which consumer will wait and the second one on which producer will wait
+only then the processes will run synchronously. If we have just one semaphore and when it gets the permission, both of the producer and the consumer will run almost simultaneously. 
+And the producer will produce all the values before consumer can consume them hence, there will be no synchronization.
+
+
+REFERENCES:
+Operating System Design: The Xinu Approach 2nd Edition
+Chapter 2 - Concurrent Execution and Operating System Services
+Chapter 7 - Coordination Of Concurrent Processes
+
+
+Functions:
+	1. Main() - Madrina Thapa
+	2. Produce() - Huzeyfe Kocabas
+	3. Consume() - Huzeyfe Kocabas
